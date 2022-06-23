@@ -109,6 +109,73 @@
         </tbody>
     </table>
 
+    <h3>HTML FORMS & INPUT</h3>
+    <p>
+        input types: <strong>"text, email, date, number, checkbox, radio, submit, reset"</strong> <em>these types are
+            used in forms making</em>
+    </p>
+    <form action="backend.php">
+        <!--action ka mtlb forms ki detail kahaan daalni hai-->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <!--br is not recommended-->
+        <label for="name">Role :</label>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmiail">
+        </div>
+        <br>
+        <div>
+            Date Of Birth: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        <br>
+        <label for="eligiblity">Are you Eligible?:</label>
+        <div>
+            <input type="checkbox" name="myEligiblity" id="eligiblity" checked>
+            <!--if we use checked then it is already checked-->
+        </div>
+        <br>
+        <div>
+            Give Your Introduction <br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Gender:<input type="radio" name="myGender"> Male <input type="radio" name="myGender">female <input
+                type="radio" name="myGender">other
+        </div>
+        <br>
+        <div>
+            <label for="Car">Car you have:</label>
+            <select name="myCar" id="Car">
+                <option value="ind">Indica</option>
+                <option value="toy">Toyota</option>
+                <option value="Swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <!--abhi submit nhi hoga qki backend.php nhi hai apna-->
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+
+
+
+    </form>
+
 
 
 
