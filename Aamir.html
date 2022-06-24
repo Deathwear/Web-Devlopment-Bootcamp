@@ -8,7 +8,7 @@
     <meta name="description" content="web dev bootcamp">
     <meta name="keywords" content="html, html tutorials, web devlopment">
     <meta name="robots" content="INDEX, FOLLOW">
-    <title>Aamir's Website</title>
+    <title>Aamir's Webite</title>
     <!-- this is how you include external css -->
     <link rel="stylesheet" href="Aamir.css">
 
@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <img src="https://images.unsplash.com/photo-1614034178871-d038bce3b763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="error loading image" width="1500" height="200">
+    <img src="https://images.unsplash.com/photo-1614034178871-d038bce3b763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+        alt="error loading image" width="1500" height="200">
     <br>
     Yeh meri webite kaa body h/content hai
     <!-- comment line hai ye (shortcut as cntrl+/) -->
@@ -107,15 +108,15 @@
             </tr>
         </tbody>
     </table>
-    
+
     <h3>HTML FORMS & INPUT</h3>
     <p>
         input types: <strong>"text, email, date, number, checkbox, radio, submit, reset"</strong> <em>these types are
             used in forms making</em>
-        </p>
-        <form action="backend.php">
-            <!--action ka mtlb forms ki detail kahaan daalni hai-->
-            <label for="name">Name</label>
+    </p>
+    <form action="backend.php">
+        <!--action ka mtlb forms ki detail kahaan daalni hai-->
+        <label for="name">Name</label>
         <div>
             <input type="text" name="myName" id="name">
         </div>
@@ -150,7 +151,7 @@
         <br>
         <div>
             Gender:<input type="radio" name="myGender"> Male <input type="radio" name="myGender">female <input
-            type="radio" name="myGender">other
+                type="radio" name="myGender">other
         </div>
         <br>
         <div>
@@ -170,13 +171,45 @@
         <div>
             <input type="reset" value="Reset Now">
         </div>
-        
+        span
 
-        
     </form>
     <br>
     <img src="https://1.bp.blogspot.com/-Gvsz6ncjRTg/T4LwwRGDgpI/AAAAAAAAAbM/9Ta6cI5a3EE/s1600/www.headersl.blogspot.com15.jpg"
-    alt="error loading image" width="1500" height="200">
+        alt="error loading image" width="1500" height="200">
+
+    <h4> INLINE & BLOCK ELEMENT</h4>
+    <strong style="border: 2px solid red;">This is a paragraph</strong><a style="border: 2px solid blue;">this is also a
+        paragraph "means pararaph is a block element</a>
+    <span style="border: 2px solid blueviolet;">This is a span</span><span style="border: 2px solid blueviolet;">this is
+        also a span "means span is a inline element</span>
+    <ul>
+        <li>elements can be divided into inline and block elements. Above lines are created to show inline and Block
+            elements</li>
+        <li>like paragraph is a block element & span,strong,em etc. are inline elements</li>
+    </ul>
+
+    <h4> IDS & CLASS in html</h4>
+    <div id="mainBox" class="redBg blackBorder">
+        <!--id & class are used to identify by CSS. we need to define property of each element or every element can be defined by using id's in CSS by defining only once. id's are specific but classes are not specific -->
+        this is mainBox
+    </div>
+    <span class="redBg"></span>
+    <!-- Emmet -->
+    <!-- select and press "ctrl+/" to comment -->
+    <!-- Dot (.) is for class and # is for id -->
+    <span class="redBg"></span>
+    <span id="mainSpan"></span>
+    <div class="redBg blackBorder anotherClass"></div>
+    <!-- Emmet takes div tag as default -->
+    <div class="blackBackground"></div>
+    <!-- creating multipe elements using Emmet -->
+    <!-- span.myClass.myClass2.myClass3 + <tab>-->
+    <span class="myClass myClass2 myClass3">First</span>
+    <span class="myClass myClass2 myClass3">Second</span>
+    <span class="myClass myClass2 myClass3">Third</span>
+    <span class="myClass myClass2 myClass3">fourth</span>
+    <!-- all spans are written in line because span is a inline element -->
 
 
 
