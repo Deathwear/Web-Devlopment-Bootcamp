@@ -1,0 +1,8 @@
+p, img, ol, ul,h4{
+    background-color: antiquewhite;
+    color: navy;
+    border-style: hidden;
+}
+summary{
+    color: rgb(0, 204, 255);
+}
