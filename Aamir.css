@@ -1,8 +1,11 @@
+/* This is a example of external CSS */
+/* example of Grouping selector */
 p, img, ol, ul,h4{
     background-color: antiquewhite;
     color: navy;
     border-style: hidden;
 }
+/* example of  element CSS */
 summary{
     color: rgb(0, 204, 255);
 }
