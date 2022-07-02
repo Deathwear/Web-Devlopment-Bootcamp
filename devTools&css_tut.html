@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS tutorials</title>
     <style>
-        p{
+        p {
             color: purple;
             font-style: italic;
             font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             /* we can  also take fonts from google tabs and we have to link google stylesheet and have to describe also for perforimg operation */
         }
-        #firstPara{
-            color: red; /* color by name*/
+
+        #firstPara {
+            color: red;
+            /* color by name*/
         }
-        #secondPara{
-            color: rgb(rgb(203, 99, 99), rgb(78, 161, 78), rgb(114, 114, 207)); /*color by rgb value*/
+
+        #secondPara {
+            color: rgb(rgb(203, 99, 99), rgb(78, 161, 78), rgb(114, 114, 207));
+            /*color by rgb value*/
         }
-        #thirdPara{
-            color: #30a14e; /*color by hex value*/
+
+        #thirdPara {
+            color: #30a14e;
+            /*color by hex value*/
         }
-        .firstPara{
+
+        .firstPara {
             /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
             background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
             height: 100px;
@@ -30,50 +38,106 @@
             border-color: greenyellow;
             border-style: solid; */
             border-radius: 13px;
-            border: 2px  solid greenyellow;
+            border: 2px solid rgb(217 188 152);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
         }
-        .secondPara{
+
+        .secondPara {
             height: 100px;
             width: 455px;
-            border-top: 2px solid violet ;
-            border-bottom: 2px solid red ;
+            border-top: 2px solid violet;
+            border-bottom: 2px solid red;
             border-right: 2px solid blue;
-            border-left: 2px solid green ;
+            border-left: 2px solid green;
             border-top-left-radius: 11px;
-            border-bottom-right-radius: 11px; 
-            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            border-bottom-right-radius: 11px;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        .thirdPara{
+
+        .thirdPara {
             font-size: x-large;
             color: rgb(92, 132, 132);
             height: 220px;
             width: 455px;
-            border: 2px solid red;
-            background-repeat: no-repeat; /* repeat-x & repeat-y will make it repeat on x & y axis respectively*/
-            background-position: center center; /* can use different combination and px values to move background image */
+            border: 2px solid rgb(217 188 152);
+            background-repeat: no-repeat;
+            /* repeat-x & repeat-y will make it repeat on x & y axis respectively*/
+            background-position: center center;
+            /* can use different combination and px values to move background image */
             background-image: url('Profile logo.jpeg');
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover; /* Resize the background image to cover the entire container */
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
+            background-size: cover;
+            /* Resize the background image to cover the entire container */
             /* box-shadow: 10px 10px grey; */
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             opacity: 0.90;
         }
-        body{
+
+        body {
             background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
         }
-        .container{
+
+        .container {
             background-color: #f1eadc;
             border: 3px solid rgb(217 188 152);
+            margin: 7px;
+            padding-left: 20px;
+            border-radius: 13px;
+            /* width: 733px; */
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-        
+
+        .container2 {
+            width: 900px;
+            border: 3px solid rgb(252 229 229);
+            margin: auto;
+            background-color: rgb(226 188 188 / 77%);
+        }
+
+        .item {
+            border: 2px solid rgb(212 151 151);
+            border-radius: 7px;
+            margin: 3px 4px;
+            padding: 3px 12px;
+            background: rgb(252 229 229);
+        }
+
+        #fruit {
+            float: left;
+            width: 46%;
+        }
+
+        #computer {
+            float: right;
+            width: 46%;
+        }
+
+        #stationary {
+            clear: both;
+            width: 96%;
+        }
+
+        #glasses {
+            clear: both;
+            width: 96%;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: max-content;
+            color: rgb(131 127 104);
+        }
     </style>
 </head>
+
 <body>
     <h1> <strong>Devloper Tools</strong> </h1>
     <p>This is a tutorial for devloper tools</p>
@@ -81,18 +145,19 @@
 
     <h1> <strong>CSS Fonts</strong> </h1>
     <p>let's play with font. It is very intresting </p>
-    <p>we can  also take fonts from google tabs and we have to link google stylesheet and have to describe also for perforimg operation</p>
+    <p>we can also take fonts from google tabs and we have to link google stylesheet and have to describe also for
+        perforimg operation</p>
 
     <h1> <strong>colors in CSS</strong> </h1>
 
     <h3>This is my First box</h3>
-    <p id="firstPara">this  is a paragraph from first box</p>
+    <p id="firstPara">this is a paragraph from first box</p>
 
     <h3>This is my Second box</h3>
-    <p id="secondPara">this  is a paragraph from first box</p>
+    <p id="secondPara">this is a paragraph from first box</p>
 
     <h3>This is my Third box</h3>
-    <p id="thirdPara">this  is a paragraph from first box</p>
+    <p id="thirdPara">this is a paragraph from first box</p>
 
     <h1> <strong> Height, Width, Border and background</strong></h1>
 
@@ -107,24 +172,67 @@
 
 
     <h2>CSS BOX MODE(MARGING & PADDING)</h2>
-    
+
     <div class="container">
         <h3>this is my headding</h3>
-        <p id="first"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
+        <p id="first"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid
+            voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid
+            voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
     </div>
 
     <div class="container">
         <h3>this is my headding</h3>
-        <p id="second"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
+        <p id="third"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid
+            voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
     </div>
 
-    <div class="container">
-        <h3>this is my headding</h3>
-        <p id="third"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit nostrum itaque corrupti aliquid voluptas, eaque cupiditate possimus at corporis cum necessitatibus quam sed.</p>
+    <!--           
+
+
+-->
+    <h2>Alignmet</h2>
+    <div class="container2">
+        <h1> Welcome to my Store </h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ea, magnam
+                neque consequuntur sapiente numquam iusto accusamus perspiciatis velit molestias voluptates nisi aliquid
+                eligendi obcaecati, illo rerum tempora est odit. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Minima inventore possimus libero, non dicta aliquid quod voluptas delectus dolorum aperiam.
+                Maiores consectetur quia hic similique quo impedit recusandae culpa nobis labore laboriosam. Explicabo,
+                amet.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ea,
+                magnam neque consequuntur sapiente numquam iusto accusamus perspiciatis velit molestias voluptates nisi
+                aliquid eligendi obcaecati, illo rerum tempora est odit. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Delectus totam, saepe quas eligendi libero voluptas alias repellendus cumque dolores,
+                blanditiis, maiores culpa necessitatibus perspiciatis. Similique doloribus optio ut fuga voluptate
+                ducimus voluptatem veniam sequi!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ea,
+                magnam neque consequuntur sapiente numquam iusto accusamus perspiciatis velit molestias voluptates nisi
+                aliquid eligendi obcaecati, illo rerum tempora est odit.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ea, magnam
+                neque consequuntur sapiente numquam iusto accusamus perspiciatis velit molestias voluptates nisi aliquid
+                eligendi obcaecati, illo rerum tempora est odit.</p>
+        </div>
     </div>
 
 
 
-    
+
 </body>
+
 </html>
