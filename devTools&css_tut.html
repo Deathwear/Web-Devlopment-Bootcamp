@@ -162,10 +162,61 @@
         .btn:hover {
             background-color: rgb(223, 94, 94);
         }
+
+        /* navigation */
+        .navbar {
+            background-color: black;
+            border-radius: 30px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 6px 6px;
+
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 3px;
+            margin: 3px 15px;
+            margin-left: 400px;
+        }
     </style>
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <div class="searchbox">
+                    <input type="text" name="search" id="search" placeholder="Search This Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+
     <h1> <strong>Devloper Tools</strong> </h1>
     <p>This is a tutorial for devloper tools</p>
     <p>we can use chrome inspect option for understanding and perform opeartions in our chrome</p>
