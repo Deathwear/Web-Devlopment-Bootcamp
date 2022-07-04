@@ -1,7 +1,6 @@
 /* This is a example of external CSS */
 /* example of Grouping selector */
 p, img, ol, ul,h4{
-    background-color: antiquewhite;
     color: navy;
     border-style: hidden;
 }

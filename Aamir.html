@@ -15,7 +15,7 @@
     <!-- this is how you include external java script -->
     <script src="Aamir.js"></script>
     <style>
-area        Q   A        footer,
+        area Q A footer,
         span {
             background-color: pink;
         }
@@ -23,14 +23,68 @@ area        Q   A        footer,
         body {
             background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
         }
-        p {
-            background: linear-gradient(#56aed4, #3a5b51)
+
+        /* navigation */
+        .navbar {
+            background-color: #8b250033;
+            border-radius: 30px;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 6px 6px;
+
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            margin: 4px;
+
+        }
+
+        .navbar li a {
+            padding: 3px 30px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: rgb(207, 216, 216);
+            /* background-color: black */
+
+        }
+
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 3px;
+            margin: 3px 15px;
+            margin-right: 80px;
+            float: right
         }
     </style>
 
 </head>
 
 <body>
+    <!-- navigation bar devloping -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <div class="searchbox">
+                    <input type="text" name="search" id="search" placeholder="Search This Website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
     <img src="https://images.unsplash.com/photo-1614034178871-d038bce3b763?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
         alt="error loading image" width="1500" height="200">
     <br>
